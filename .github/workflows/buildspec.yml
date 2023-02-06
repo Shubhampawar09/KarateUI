@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '1.8'
-      
+
       - name: Set Time
         run: |
          echo "date=$(date +"%Y-%m-%d")" >> $GITHUB_ENV  
@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
          name: TestReport ${{env.date}}
-         path: ./target/karate-reports/karate-summary.html
+         path: ./target/karate-reports/
     
 
 

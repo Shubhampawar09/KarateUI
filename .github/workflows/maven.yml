@@ -30,7 +30,7 @@ jobs:
         run: mvn -B package --file pom.xml
         
       - name: Run command
-        run: mvn clean test -Dtest=uiTestRunnerwithTags  "-Dtags=@basicUITestdropdown"
+        run: mvn clean test -Dtest=uiTestRunnerwithTags  "-Dtags=@basicUITest"
       
       - uses: actions/upload-artifact@v3
         with:

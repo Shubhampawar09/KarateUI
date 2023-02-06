@@ -25,10 +25,27 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: '1.8'
-          
+
+      - name: Set Time
+        run: |
+         echo "date=$(date +"%Y-%m-%d")" >> $GITHUB_ENV  
+
+
       - name: Build with Maven
         run: mvn -B package --file pom.xml
         
       - name: Run command
         run: mvn test -Dtest=uiTestRunnerwithTags  "-Dtags=@basicUITest"
+
+      - # Generate output reports in artifcats
+      - name: Output of the Reports
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v3
+        with:
+         name: TestReport ${{env.date}}
+         path: ./target/karate-reports/
+    
+
+
       

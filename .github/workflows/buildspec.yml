@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
          name: TestReport ${{env.date}}
-         path: ./target/karate-reports/
+         path: ./target/karate-reports/karate-summary.html
     
 
 

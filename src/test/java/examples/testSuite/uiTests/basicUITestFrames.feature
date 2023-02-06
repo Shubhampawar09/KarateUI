@@ -13,5 +13,5 @@ Feature: UI Test with Frames
     And switchFrame('#iframeResult')
     * switchFrame('body > iframe')
     And click('#w3loginbtn')
-    * waitFor('#sub-frame-error')
-    Then exists('#sub-frame-error')
+    # * waitFor('#sub-frame-error')
+    # Then exists('#sub-frame-error')

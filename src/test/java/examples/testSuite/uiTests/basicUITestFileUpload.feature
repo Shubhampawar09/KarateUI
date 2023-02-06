@@ -1,7 +1,7 @@
 Feature: UI Test with File Upload
 
 Background:
-  * configure driver = { type: 'chrome', showDriverLog: true }
+  * configure driver = { type: 'chrome', showDriverLog: true, headless: true }
 @basicUITestFileUpload
 Scenario: File Upload
     * configure driver = { type: 'chrome' }

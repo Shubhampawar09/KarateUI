@@ -1,7 +1,7 @@
 Feature: UI Test with Frames
 
   Background: 
-    * configure driver = { type: 'chrome', showDriverLog: true }
+    * configure driver = { type: 'chrome', showDriverLog: true, headless: true }
 
   @basicUITest
   Scenario: Handle frames test

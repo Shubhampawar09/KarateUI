@@ -1,7 +1,7 @@
 Feature: Basic UI Tests-Scenarios Outline
 
 Background:
-  * configure driver = { type: 'chrome', showDriverLog: true }
+  * configure driver = { type: 'chrome', showDriverLog: true, headless: true }
 @basicUITestScenarioOutlineExamples
 Scenario Outline:  UI tests for Saucedemo site with Example Values
 

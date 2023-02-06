@@ -1,7 +1,7 @@
 Feature: Login and Logout
 
   Background: 
-    * configure driver = { type: 'chrome', showDriverLog: true }
+    * configure driver = { type: 'chrome', showDriverLog: true, headless: true }
 
   @basicUITest
   Scenario: Login and Logout tests for Saucedemo site

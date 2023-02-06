@@ -1,7 +1,7 @@
 Feature: User registration
 
   Background: 
-    * configure driver = { type: 'chrome', showDriverLog: true }
+    * configure driver = { type: 'chrome', showDriverLog: true, headless: true }
     * def javaUtils = Java.type('utils.javaUtils')
 
   @basicUITestdropdown

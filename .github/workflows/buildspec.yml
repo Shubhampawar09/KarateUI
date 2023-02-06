@@ -37,7 +37,7 @@ jobs:
       - name: Run command
         run: mvn test -Dtest=uiTestRunnerwithTags  "-Dtags=@basicUITest"
 
-      - # Generate output reports in artifcats
+       # Generate output reports in artifcats
       - name: Output of the Reports
         if: always()
         continue-on-error: true

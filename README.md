@@ -39,15 +39,10 @@ Refreance-https://github.com/karatelabs/karate
     6. Please go through this document if you are a beginner in karate ui - https://karatelabs.github.io/karate/karate-core/
   
 
-
-
 **Installations:**
  
    Make sure you install the plugins required for karate
     
-
-
-
 
 **Dependencies**
 

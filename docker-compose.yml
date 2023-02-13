@@ -1,0 +1,11 @@
+version: "3"
+services:
+  # this container will run Cypress test using built-in Electron browser
+  karate-test:
+    image: "karate"
+    command: "mvn test -Dtest=uiTestRunnerwithTags  '-Dtags=@basicUITestdropdown'"
+    volumes:
+      - ./target/karate-reports/:/karate-ui/target/videos
+      
+
+      
